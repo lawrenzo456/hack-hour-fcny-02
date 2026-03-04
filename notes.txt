@@ -1,0 +1,8 @@
+Day 1 - fizzbuzz
+Can i use a for in loop? if so, can i establish the length of array in advance?
+
+I got the test wrong because I started at i = 0, instead of i = 1, and i needed to make sure i printed the numbers from 1 to num, so <= for num needed to be there
+
+Also, I should be able to use switch cases here. 
+--
+Day 2

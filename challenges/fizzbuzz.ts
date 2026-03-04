@@ -13,7 +13,21 @@ fizzbuzz(16);
 */
 
 const fizzbuzz = (num: number): (number | string)[] => {
-  return [];
+  const array: (number | string)[] = [];
+  //can we use a for in loop?
+  for (let i = 1; i <= num; i++) {
+    //if num is divisible by 3 but not 5, push fizz
+    if (i % 3 === 0 && i % 5 !== 0) {
+      array.push('fizz');
+    } else if (i % 3 !== 0 && i % 5 === 0) {
+      array.push('buzz');
+    } else if (i % 3 === 0 && i % 5 === 0) {
+      array.push('fizzbuzz');
+    } else {
+      array.push(i);
+    }
+  }
+  return array;
 };
 
 /*
@@ -37,7 +51,31 @@ fizzbuzzbazz(25);
 */
 
 const fizzbuzzbazz = (num: number): (number | string)[] => {
-  return [];
+  const array: (number | string)[] = [];
+  for (let i = 1; i <= num; i++) {
+    //if num is divisible by 3 but not 5, push fizz
+    if (i % 3 === 0 && i % 5 !== 0 && i % 7 !== 0) {
+      array.push('fizz');
+    } else if (i % 5 === 0 && i % 3 !== 0 && i % 7 !== 0) {
+      array.push('buzz');
+    } else if (i % 3 === 0 && i % 5 === 0 && i % 7 !== 0) {
+      array.push('fizzbuzz');
+    } else if (i % 3 !== 0 && i % 5 !== 0 && i % 7 === 0) {
+      array.push('bazz');
+    } else if (i % 3 !== 0 && i % 5 === 0 && i % 7 === 0) {
+      array.push('fizzbazz');
+    } else if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
+      array.push('fizzbuzzbazz');
+    } else {
+      array.push(i);
+    }
+  }
+  return array;
 };
+console.log(fizzbuzzbazz(7));
+
+function processFizzBuzz(number:number) {
+
+}
 
 export { fizzbuzz, fizzbuzzbazz };
