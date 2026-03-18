@@ -17,6 +17,14 @@
 */
 
 export const twoSum = (arr: number[], target: number): boolean => {
+  // for (let i = 0; i < arr.length; i++) {
+  //   const difference = target - arr[i];
+  //   if (arr.includes(difference)) {
+  //     if (arr.indexOf(difference) != i) return true;
+  //   } else continue;
+  // }
+  // const numMap = new Map(arr);
+  // console.log(numMap);
   return false;
 };
 
@@ -33,3 +41,40 @@ The straightforward way to solve this problem would take O(n³) time. Is it poss
 export const threeSum = (arr: number[], target: number): boolean => {
   return false;
 };
+``;
+
+/*from Kevin
+function twoSum(nums: number[], target: number): number[] {
+
+// solution 
+// lets get the difference of target minus nums (n)
+
+// then use for loop on array 
+
+// let difference = target - nums[i]
+// for (let i =0; i< nums.lenght-1; i++ )
+
+// target = 9 - 2 
+// target = 7
+
+
+// Then
+// place the array into a hashmap
+// key of hashmap will be index
+// value of hashmap will be number 
+
+
+// Then
+// check if the hashmap has target
+//map.get(target)
+// map.get(7)
+// 
+
+// if yes then return the current index and key [i,map.key(7)]
+                                                // return [0,1]
+
+// 
+
+    
+};
+*/

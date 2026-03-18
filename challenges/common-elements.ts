@@ -20,6 +20,7 @@ After completing your initial approach, try refactoring your solution so that it
 const commonElements = (
   ...args: (string | number)[][]
 ): (string | number)[] | 'Nothing in Common!' => {
+  //frequency table, add all elements in the array to a hash map and then push all elements that have a hash of > 1 
   return [];
 };
 

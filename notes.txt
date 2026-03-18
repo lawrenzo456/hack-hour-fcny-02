@@ -6,3 +6,14 @@ I got the test wrong because I started at i = 0, instead of i = 1, and i needed 
 Also, I should be able to use switch cases here. 
 --
 Day 2
+
+
+
+--
+Two sum
+Adding to an object = o(1), adding to an array = o1, iterating through an array is o(n)
+
+we want to put the array into a hashmap 
+
+--
+
