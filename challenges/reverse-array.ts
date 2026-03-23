@@ -7,6 +7,15 @@ to the array prototype while solving the problem.
 */
 
 export const reverseArray = (array: any[]): any[] => {
+  let valueFront = array[0];
+  let valueBack = array[array.length - 1];
+  for (let i = 0; i < Math.floor(array.length / 2); i++) {
+    valueFront = array[i];
+    valueBack = array[array.length - 1 - i];
+    array[i] = valueBack;
+    array[length - 1 - i] = valueFront;
+  }
+
   return array;
 };
 
